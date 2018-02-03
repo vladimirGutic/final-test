@@ -58,7 +58,7 @@
             <objects>
                 <viewController title="Map" id="gqx-pr-nPk" customClass="MapViewController" customModule="ComtradeGramFinal" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="G51-47-Wma">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.2937158688" green="0.46550762020000003" blue="0.80472797929999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <viewLayoutGuide key="safeArea" id="bBt-8X-gQN"/>
@@ -85,23 +85,23 @@
                         <segue destination="G7y-xM-DfN" kind="relationship" relationship="viewControllers" id="2Dj-Il-Emo"/>
                         <segue destination="OmN-VB-uzz" kind="relationship" relationship="viewControllers" id="002-Lr-rQ2"/>
                         <segue destination="cDH-tj-0VU" kind="relationship" relationship="viewControllers" id="nUy-IU-FCk"/>
-                        <segue destination="i7a-BX-iGk" kind="relationship" relationship="viewControllers" id="hpg-A3-Zgo"/>
+                        <segue destination="2Ee-Kb-QDU" kind="relationship" relationship="viewControllers" id="hpg-A3-Zgo"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="T0m-tM-5Ay" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1524" y="133.5832083958021"/>
         </scene>
-        <!--Settings-->
+        <!--Settings View Controller-->
         <scene sceneID="g60-eb-0xW">
             <objects>
-                <viewController id="i7a-BX-iGk" sceneMemberID="viewController">
+                <viewController id="i7a-BX-iGk" customClass="SettingsViewController" customModule="ComtradeGramFinal" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="MHo-Wz-J2s">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zNs-yx-3sf">
-                                <rect key="frame" x="37" y="244" width="300" height="44"/>
+                                <rect key="frame" x="37" y="288" width="300" height="44"/>
                                 <color key="backgroundColor" red="0.93333333330000001" green="0.1215686275" blue="0.20392156859999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="NPz-Gz-vJb"/>
@@ -110,6 +110,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
+                                    <action selector="openComments" destination="i7a-BX-iGk" eventType="touchUpInside" id="ddL-QF-B5E"/>
                                     <action selector="submitLogin" destination="Frg-Sp-00v" eventType="touchUpInside" id="nFU-hc-pYS"/>
                                     <segue destination="n42-JV-dqh" kind="show" identifier="openComments" id="JfT-RR-XTK"/>
                                 </connections>
@@ -125,10 +126,11 @@
                                 </state>
                                 <connections>
                                     <action selector="submitLogin" destination="Frg-Sp-00v" eventType="touchUpInside" id="9W9-4y-LX1"/>
+                                    <segue destination="Frg-Sp-00v" kind="show" identifier="openLogin" id="dJJ-fy-aYg"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sVU-UX-KRf">
-                                <rect key="frame" x="37" y="170" width="300" height="44"/>
+                                <rect key="frame" x="37" y="214" width="300" height="44"/>
                                 <color key="backgroundColor" red="0.93333333330000001" green="0.1215686275" blue="0.20392156859999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="Hid-2o-fFn"/>
@@ -137,6 +139,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
+                                    <action selector="openMaps" destination="i7a-BX-iGk" eventType="touchUpInside" id="Uor-Tf-vbm"/>
                                     <action selector="submitLogin" destination="Frg-Sp-00v" eventType="touchUpInside" id="XT9-Ia-49O"/>
                                 </connections>
                             </button>
@@ -155,14 +158,14 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="OKf-4e-S0U"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Settings" id="wuT-sh-srg"/>
+                    <navigationItem key="navigationItem" id="V9g-T3-n3b"/>
                     <connections>
                         <segue destination="gqx-pr-nPk" kind="show" identifier="openMap" id="fMh-YT-cuL"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jU6-XE-rdN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2256.8000000000002" y="133.5832083958021"/>
+            <point key="canvasLocation" x="2975" y="133"/>
         </scene>
         <!--Login View Controller-->
         <scene sceneID="82G-3D-kRR">
@@ -255,7 +258,7 @@
                         <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="HsF-V1-hlW"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Discover" image="search" id="Gow-Wh-XN5"/>
+                    <tabBarItem key="tabBarItem" title="Discover" image="favorites" id="Gow-Wh-XN5"/>
                     <navigationItem key="navigationItem" title="DISCOVER" largeTitleDisplayMode="always" id="3dX-cN-MKd" propertyAccessControl="localizable">
                         <barButtonItem key="leftBarButtonItem" title="Item" image="BCk" id="aER-2w-oAc">
                             <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -274,7 +277,7 @@
             <objects>
                 <viewController title="Comments" id="n42-JV-dqh" customClass="CommentsViewController" customModule="ComtradeGramFinal" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="JQD-iH-7O8">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.2937158688" green="0.82883029513888884" blue="0.80472797929999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <viewLayoutGuide key="safeArea" id="cMt-au-ASC"/>
@@ -304,12 +307,36 @@
             </objects>
             <point key="canvasLocation" x="58" y="134"/>
         </scene>
+        <!--Settings-->
+        <scene sceneID="ivU-OF-Xjw">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="2Ee-Kb-QDU" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Settings" image="photo" id="wuT-sh-srg"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="PPG-0v-hgc">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="i7a-BX-iGk" kind="relationship" relationship="rootViewController" id="0nq-Mt-e9Q"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Y6m-0L-V1t" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2256" y="133.13343328335833"/>
+        </scene>
     </scenes>
     <resources>
         <image name="BCk" width="23" height="23"/>
+        <image name="favorites" width="32" height="32"/>
         <image name="home1" width="32" height="32"/>
         <image name="jedais" width="1440" height="1440"/>
+        <image name="photo" width="32" height="32"/>
         <image name="profile" width="32" height="32"/>
         <image name="search" width="32" height="32"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="dJJ-fy-aYg"/>
+    </inferredMetricsTieBreakers>
 </document>

@@ -7,8 +7,11 @@
 //
 
 import UIKit
+import SwiftInstagram
 
 class MapViewController: UIViewController {
+
+    var post: InstagramMedia?
 
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -7,8 +7,11 @@
 //
 
 import UIKit
+import SwiftInstagram
 
 class CommentsViewController: UIViewController {
+
+    var post: InstagramMedia?
 
     override func viewDidLoad() {
         super.viewDidLoad()
