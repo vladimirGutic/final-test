@@ -58,7 +58,7 @@
             <objects>
                 <viewController title="Map" id="gqx-pr-nPk" customClass="MapViewController" customModule="ComtradeGramFinal" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="G51-47-Wma">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.2937158688" green="0.46550762020000003" blue="0.80472797929999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <viewLayoutGuide key="safeArea" id="bBt-8X-gQN"/>
@@ -111,7 +111,6 @@
                                 </state>
                                 <connections>
                                     <action selector="openComments" destination="i7a-BX-iGk" eventType="touchUpInside" id="ddL-QF-B5E"/>
-                                    <action selector="submitLogin" destination="Frg-Sp-00v" eventType="touchUpInside" id="nFU-hc-pYS"/>
                                     <segue destination="n42-JV-dqh" kind="show" identifier="openComments" id="JfT-RR-XTK"/>
                                 </connections>
                             </button>
@@ -125,8 +124,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <action selector="submitLogin" destination="Frg-Sp-00v" eventType="touchUpInside" id="9W9-4y-LX1"/>
-                                    <segue destination="Frg-Sp-00v" kind="show" identifier="openLogin" id="dJJ-fy-aYg"/>
+                                    <action selector="logout" destination="i7a-BX-iGk" eventType="touchUpInside" id="nGD-JS-NFg"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sVU-UX-KRf">
@@ -161,6 +159,7 @@
                     <navigationItem key="navigationItem" id="V9g-T3-n3b"/>
                     <connections>
                         <segue destination="gqx-pr-nPk" kind="show" identifier="openMap" id="fMh-YT-cuL"/>
+                        <segue destination="Frg-Sp-00v" kind="modal" identifier="openLogin" modalTransitionStyle="crossDissolve" id="cjN-ik-A2a"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jU6-XE-rdN" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -277,7 +276,7 @@
             <objects>
                 <viewController title="Comments" id="n42-JV-dqh" customClass="CommentsViewController" customModule="ComtradeGramFinal" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="JQD-iH-7O8">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.2937158688" green="0.82883029513888884" blue="0.80472797929999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <viewLayoutGuide key="safeArea" id="cMt-au-ASC"/>
@@ -337,6 +336,6 @@
         <image name="search" width="32" height="32"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="dJJ-fy-aYg"/>
+        <segue reference="cjN-ik-A2a"/>
     </inferredMetricsTieBreakers>
 </document>

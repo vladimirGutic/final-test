@@ -54,5 +54,10 @@ class SettingsViewController: UIViewController {
             break
         }
     }
+
+    @IBAction func logout(){
+        Instagram.shared.logout()
+        self.performSegue(withIdentifier: "openLogin", sender: nil)
+    }
 }
 
