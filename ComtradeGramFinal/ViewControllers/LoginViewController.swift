@@ -53,7 +53,7 @@ class LoginViewController: UIViewController {
 //        if false == self.isInputDataValid() {
 //            return
 //        }
-        Instagram.shared.login(from: self.navigationController!, success: {
+        Instagram.shared.login(from: self.navigationController!, withScopes: [.all], success: {
             // Do your stuff here ...
             self.performSegue(withIdentifier: "openDashboard", sender: self)
         }, failure: { error in

@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		071CE99D2025C78600BEEAAD /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 071CE99C2025C78500BEEAAD /* ProfileViewController.swift */; };
 		071CE99F2025C79F00BEEAAD /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 071CE99E2025C79F00BEEAAD /* MapViewController.swift */; };
 		071CE9A12025C7B300BEEAAD /* FriendsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 071CE9A02025C7B300BEEAAD /* FriendsViewController.swift */; };
 		071CE9A32025C7C600BEEAAD /* CommentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 071CE9A22025C7C600BEEAAD /* CommentsViewController.swift */; };
@@ -25,6 +24,9 @@
 		0784C4DB2019196F000E942E /* UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0784C4DA2019196F000E942E /* UIImageView.swift */; };
 		90C2055B863CC46A8EC5F904 /* Pods_ComtradeGramFinalTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DE6CDDB43799CA87D77C0B2 /* Pods_ComtradeGramFinalTests.framework */; };
 		B2DB6D372B1B2596201149ED /* Pods_ComtradeGramFinal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA36AD9161F49952F5BD6D08 /* Pods_ComtradeGramFinal.framework */; };
+		E71AA03A202FCE7600C4604A /* PhotoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71AA039202FCE7600C4604A /* PhotoTableViewCell.swift */; };
+		E71AA03C202FCE9C00C4604A /* CollectionPhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71AA03B202FCE9C00C4604A /* CollectionPhotoCell.swift */; };
+		E7BDA5F8202F52E600F312F2 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7BDA5F7202F52E600F312F2 /* ProfileViewController.swift */; };
 		EB1FCA11AEBC2E7CA61E80C9 /* Pods_ComtradeGramFinalUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5972BEBF5F29AFF33D431699 /* Pods_ComtradeGramFinalUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -46,7 +48,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		071CE99C2025C78500BEEAAD /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		071CE99E2025C79F00BEEAAD /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		071CE9A02025C7B300BEEAAD /* FriendsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsViewController.swift; sourceTree = "<group>"; };
 		071CE9A22025C7C600BEEAAD /* CommentsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsViewController.swift; sourceTree = "<group>"; };
@@ -77,6 +78,9 @@
 		A3A5C9D7385833C8A86AED69 /* Pods-ComtradeGramFinalUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ComtradeGramFinalUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ComtradeGramFinalUITests/Pods-ComtradeGramFinalUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		C8497E9560F46BE726082DDE /* Pods-ComtradeGramFinalUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ComtradeGramFinalUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ComtradeGramFinalUITests/Pods-ComtradeGramFinalUITests.release.xcconfig"; sourceTree = "<group>"; };
 		DA36AD9161F49952F5BD6D08 /* Pods_ComtradeGramFinal.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ComtradeGramFinal.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E71AA039202FCE7600C4604A /* PhotoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoTableViewCell.swift; sourceTree = "<group>"; };
+		E71AA03B202FCE9C00C4604A /* CollectionPhotoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionPhotoCell.swift; sourceTree = "<group>"; };
+		E7BDA5F7202F52E600F312F2 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,7 +114,7 @@
 		071CE99B2025C77000BEEAAD /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				071CE99C2025C78500BEEAAD /* ProfileViewController.swift */,
+				E7BDA5F7202F52E600F312F2 /* ProfileViewController.swift */,
 				071CE9A02025C7B300BEEAAD /* FriendsViewController.swift */,
 				071CE9A22025C7C600BEEAAD /* CommentsViewController.swift */,
 				071CE9A42025C7D700BEEAAD /* SearchViewController copy.swift */,
@@ -149,6 +153,8 @@
 			children = (
 				0784C4D920191955000E942E /* Utilities */,
 				073C19452006891100F7816E /* AppDelegate.swift */,
+				E71AA03B202FCE9C00C4604A /* CollectionPhotoCell.swift */,
+				E71AA039202FCE7600C4604A /* PhotoTableViewCell.swift */,
 				071CE99B2025C77000BEEAAD /* ViewControllers */,
 				073C19492006891100F7816E /* Main.storyboard */,
 				073C194F2006891100F7816E /* Assets.xcassets */,
@@ -501,13 +507,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E71AA03A202FCE7600C4604A /* PhotoTableViewCell.swift in Sources */,
 				071CE9A32025C7C600BEEAAD /* CommentsViewController.swift in Sources */,
+				E71AA03C202FCE9C00C4604A /* CollectionPhotoCell.swift in Sources */,
 				0784C4DB2019196F000E942E /* UIImageView.swift in Sources */,
 				073C19482006891100F7816E /* HomeViewController.swift in Sources */,
 				073C194E2006891100F7816E /* ComtradeGramFinal.xcdatamodeld in Sources */,
-				071CE99D2025C78600BEEAAD /* ProfileViewController.swift in Sources */,
 				071CE99F2025C79F00BEEAAD /* MapViewController.swift in Sources */,
 				071CE9A52025C7D700BEEAAD /* SearchViewController copy.swift in Sources */,
+				E7BDA5F8202F52E600F312F2 /* ProfileViewController.swift in Sources */,
 				073C19462006891100F7816E /* AppDelegate.swift in Sources */,
 				071CE9A72025D47400BEEAAD /* SettingsViewController.swift in Sources */,
 				071E5FD92018F667001B8FE6 /* LoginViewController.swift in Sources */,
@@ -679,7 +687,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 43E5B5CSA6;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = ComtradeGramFinal/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Comtrade.ComtradeGramFinal;
@@ -695,7 +703,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 43E5B5CSA6;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = ComtradeGramFinal/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Comtrade.ComtradeGramFinal;
