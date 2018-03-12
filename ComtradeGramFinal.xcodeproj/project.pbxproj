@@ -45,6 +45,13 @@
 			remoteGlobalIDString = 073C19412006891100F7816E;
 			remoteInfo = ComtradeGramFinal;
 		};
+		E710071F2033671B008B8BF9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 073C193A2006891100F7816E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 073C19412006891100F7816E;
+			remoteInfo = ComtradeGramFinal;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -78,6 +85,7 @@
 		A3A5C9D7385833C8A86AED69 /* Pods-ComtradeGramFinalUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ComtradeGramFinalUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ComtradeGramFinalUITests/Pods-ComtradeGramFinalUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		C8497E9560F46BE726082DDE /* Pods-ComtradeGramFinalUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ComtradeGramFinalUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ComtradeGramFinalUITests/Pods-ComtradeGramFinalUITests.release.xcconfig"; sourceTree = "<group>"; };
 		DA36AD9161F49952F5BD6D08 /* Pods_ComtradeGramFinal.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ComtradeGramFinal.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E710071A2033671B008B8BF9 /* ProfilePageUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProfilePageUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E71AA039202FCE7600C4604A /* PhotoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoTableViewCell.swift; sourceTree = "<group>"; };
 		E71AA03B202FCE9C00C4604A /* CollectionPhotoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionPhotoCell.swift; sourceTree = "<group>"; };
 		E7BDA5F7202F52E600F312F2 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
@@ -105,6 +113,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				EB1FCA11AEBC2E7CA61E80C9 /* Pods_ComtradeGramFinalUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E71007172033671B008B8BF9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -144,6 +159,7 @@
 				073C19422006891100F7816E /* ComtradeGramFinal.app */,
 				073C19592006891200F7816E /* ComtradeGramFinalTests.xctest */,
 				073C19642006891200F7816E /* ComtradeGramFinalUITests.xctest */,
+				E710071A2033671B008B8BF9 /* ProfilePageUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -279,6 +295,24 @@
 			productReference = 073C19642006891200F7816E /* ComtradeGramFinalUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		E71007192033671B008B8BF9 /* ProfilePageUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E71007232033671B008B8BF9 /* Build configuration list for PBXNativeTarget "ProfilePageUITests" */;
+			buildPhases = (
+				E71007162033671B008B8BF9 /* Sources */,
+				E71007172033671B008B8BF9 /* Frameworks */,
+				E71007182033671B008B8BF9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E71007202033671B008B8BF9 /* PBXTargetDependency */,
+			);
+			name = ProfilePageUITests;
+			productName = ProfilePageUITests;
+			productReference = E710071A2033671B008B8BF9 /* ProfilePageUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -303,6 +337,11 @@
 						ProvisioningStyle = Automatic;
 						TestTargetID = 073C19412006891100F7816E;
 					};
+					E71007192033671B008B8BF9 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 073C19412006891100F7816E;
+					};
 				};
 			};
 			buildConfigurationList = 073C193D2006891100F7816E /* Build configuration list for PBXProject "ComtradeGramFinal" */;
@@ -321,6 +360,7 @@
 				073C19412006891100F7816E /* ComtradeGramFinal */,
 				073C19582006891200F7816E /* ComtradeGramFinalTests */,
 				073C19632006891200F7816E /* ComtradeGramFinalUITests */,
+				E71007192033671B008B8BF9 /* ProfilePageUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -344,6 +384,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		073C19622006891200F7816E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E71007182033671B008B8BF9 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -539,6 +586,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E71007162033671B008B8BF9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -551,6 +605,11 @@
 			isa = PBXTargetDependency;
 			target = 073C19412006891100F7816E /* ComtradeGramFinal */;
 			targetProxy = 073C19652006891200F7816E /* PBXContainerItemProxy */;
+		};
+		E71007202033671B008B8BF9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 073C19412006891100F7816E /* ComtradeGramFinal */;
+			targetProxy = E710071F2033671B008B8BF9 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -783,6 +842,34 @@
 			};
 			name = Release;
 		};
+		E71007212033671B008B8BF9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ProfilePageUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = VladimirGutic.ProfilePageUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ComtradeGramFinal;
+			};
+			name = Debug;
+		};
+		E71007222033671B008B8BF9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ProfilePageUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = VladimirGutic.ProfilePageUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ComtradeGramFinal;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -818,6 +905,15 @@
 			buildConfigurations = (
 				073C19742006891200F7816E /* Debug */,
 				073C19752006891200F7816E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E71007232033671B008B8BF9 /* Build configuration list for PBXNativeTarget "ProfilePageUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E71007212033671B008B8BF9 /* Debug */,
+				E71007222033671B008B8BF9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

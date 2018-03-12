@@ -105,7 +105,7 @@ class ProfileViewController: UIViewController, UICollectionViewDelegate, UIColle
         return cell
     }
     
-    //MARK: Table view
+    //MARK: Table view image
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return instagramPosts.count
@@ -119,9 +119,11 @@ class ProfileViewController: UIViewController, UICollectionViewDelegate, UIColle
         let post = instagramPosts[indexPath.row]
         cell.imageTableCell.downloadedFrom(url: post.images.standardResolution.url, contentMode: .scaleAspectFill)
         cell.clipsToBounds = true
-        /* Odvajanje slika u tabeli
+        
+        /* Odvajanje slika u tabeli */
          cell.layer.borderWidth = 2
-         cell.layer.borderColor = UIColor.white.cgColor */
+         cell.layer.borderColor = UIColor.white.cgColor
+        
         return cell
     }
     
@@ -140,6 +142,8 @@ class ProfileViewController: UIViewController, UICollectionViewDelegate, UIColle
             print(error.localizedDescription)
         })
     }
+    
+    //MARK: Setup user details
     
     func userDetales () {
         

@@ -444,7 +444,7 @@
                                                     <rect key="frame" x="0.0" y="0.0" width="365" height="364.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
-                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="o7o-7l-NE5">
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="o7o-7l-NE5">
                                                             <rect key="frame" x="0.0" y="1" width="365" height="362.5"/>
                                                         </imageView>
                                                     </subviews>
@@ -507,12 +507,12 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="xXM-ud-x8e" secondAttribute="trailing" id="Ct9-9q-8dO"/>
+                                    <constraint firstItem="Mpn-5Q-IEw" firstAttribute="top" secondItem="RyI-Vo-8Lt" secondAttribute="bottom" id="D7r-ww-FV1"/>
+                                    <constraint firstItem="Mpn-5Q-IEw" firstAttribute="leading" secondItem="18W-5C-KfA" secondAttribute="leading" id="FQ8-7U-Gl2"/>
+                                    <constraint firstAttribute="trailing" secondItem="Mpn-5Q-IEw" secondAttribute="trailing" id="HeY-UG-UoS"/>
+                                    <constraint firstAttribute="bottom" secondItem="Mpn-5Q-IEw" secondAttribute="bottom" id="N2C-2K-yv9"/>
                                     <constraint firstItem="RyI-Vo-8Lt" firstAttribute="leading" secondItem="18W-5C-KfA" secondAttribute="leading" id="Q4N-Op-O20"/>
-                                    <constraint firstItem="Mpn-5Q-IEw" firstAttribute="leading" secondItem="18W-5C-KfA" secondAttribute="leading" id="SKt-V8-1Tv"/>
-                                    <constraint firstItem="Mpn-5Q-IEw" firstAttribute="top" secondItem="RyI-Vo-8Lt" secondAttribute="bottom" id="SaF-dL-Xp9"/>
                                     <constraint firstItem="Fu2-3J-gwf" firstAttribute="centerX" secondItem="18W-5C-KfA" secondAttribute="centerX" id="UoG-XP-fcL"/>
-                                    <constraint firstAttribute="bottom" secondItem="Mpn-5Q-IEw" secondAttribute="bottom" id="UvI-JE-iW2"/>
-                                    <constraint firstAttribute="trailing" secondItem="Mpn-5Q-IEw" secondAttribute="trailing" id="WaX-zg-ZOL"/>
                                     <constraint firstItem="RyI-Vo-8Lt" firstAttribute="top" secondItem="18W-5C-KfA" secondAttribute="top" id="aXg-gU-lSm"/>
                                     <constraint firstAttribute="bottom" secondItem="tGQ-8x-9lM" secondAttribute="bottom" id="cBP-eb-dMu"/>
                                     <constraint firstItem="tGQ-8x-9lM" firstAttribute="top" secondItem="RyI-Vo-8Lt" secondAttribute="bottom" id="g3d-Ft-hG2"/>
@@ -555,7 +555,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sW7-4B-TUv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-199.19999999999999" y="847.82608695652175"/>
+            <point key="canvasLocation" x="-199.19999999999999" y="846.9265367316342"/>
         </scene>
         <!--Friends-->
         <scene sceneID="e37-mb-jiD">
